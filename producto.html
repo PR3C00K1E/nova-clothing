@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polerón NOVA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NOVA Clothing</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#productos">Productos</a>
+            <a href="index.html#carrito">🛒 Carrito</a>
+        </nav>
+    </header>
+
+
+    <main class="pagina-producto">
+
+        <div class="producto-imagen-grande">
+
+            <img
+                src="imagenes/poleron.jpg"
+                alt="Polerón NOVA"
+            >
+
+        </div>
+
+
+        <div class="informacion-producto">
+
+            <h2>Polerón NOVA</h2>
+
+            <p class="precio-producto">
+                $29.990
+            </p>
+
+            <p>
+                Polerón urbano NOVA Clothing.
+                Cómodo y perfecto para cualquier ocasión.
+            </p>
+
+
+            <h3>Talla</h3>
+
+            <div class="tallas">
+            <div class="tallas"></div>
+            </div>
+
+
+            <p id="talla-seleccionada">
+                Selecciona una talla
+            </p>
+
+
+            <h3>Cantidad</h3>
+
+            <div class="cantidad">
+
+                <button onclick="cambiarCantidad(-1)">
+                    −
+                </button>
+
+                <span id="cantidad">
+                    1
+                </span>
+
+                <button onclick="cambiarCantidad(1)">
+                    +
+                </button>
+
+            </div>
+
+
+            <button
+                class="agregar-producto"
+                onclick="agregarProducto()"
+            >
+                Agregar al carrito
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="producto.js"></script>
+
+</body>
+
+</html>

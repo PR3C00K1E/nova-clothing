@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Clothing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NOVA Clothing</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section>
+            <h2>Viste diferente.</h2>
+            <p>Ropa urbana para quienes quieren marcar su propio estilo.</p>
+            <button>Ver productos</button>
+        </section>
+
+        <section class="productos" id="productos">
+    <h2>Productos destacados</h2>
+
+    <div class="grid-productos">
+
+        <div class="producto">
+
+           <a href="producto.html?producto=poleron" class="link-producto">
+
+               <div class="imagen-producto">
+                   <img src="imagenes/poleron.jpg" alt="Polerón NOVA">
+               </div>
+
+               <h3>Polerón NOVA</h3>
+
+           </a>
+
+           <p>$29.990</p>
+
+    </div>
+
+        <div class="producto">
+
+           <a href="producto.html?producto=polera" class="link-producto">
+
+               <div class="imagen-producto">
+                   <img src="imagenes/polera.jpg" alt="Polera Oversize">
+               </div>
+
+               <h3>Polera Oversize</h3>
+
+           </a>
+
+           <p>$19.990</p>
+
+        </div>
+
+            <div class="producto">
+
+               <a href="producto.html?producto=cargo" class="link-producto">
+
+                   <div class="imagen-producto">
+                       <img src="imagenes/cargo.jpg" alt="Pantalón Cargo">
+                   </div>
+
+                   <h3>Pantalón Cargo</h3>
+
+               </a>
+
+               <p>$34.990</p>
+
+            </div>  
+ 
+    </div>
+    </section>
+    </main>
+    <section class="contacto" id="contacto">
+    <h2>¿Tienes alguna pregunta?</h2>
+    <p>Contáctanos y te ayudaremos.</p>
+
+    <a class="boton-comprar" href="https://wa.me/56912345678" target="_blank">
+        Hablar por WhatsApp
+    </a>
+    </section>
+    <section class="carrito" id="carrito">
+
+        <h2>🛒 Tu carrito</h2>
+
+        <div id="lista-carrito" class="lista-carrito">
+            <p>Tu carrito está vacío.</p>
+        </div>
+
+        <div class="resumen-carrito">
+
+            <h3>
+                Total:
+                <span id="total">$0</span>
+            </h3>
+
+            <button onclick="finalizarPedido()" class="finalizar">
+                Finalizar pedido por WhatsApp
+            </button>
+
+        </div>
+
+    </section>
+    <footer>
+        <p>© 2026 NOVA Clothing</p>
+    </footer>
+
+<script src="carrito.js"></script>
+</body>
+</html>
